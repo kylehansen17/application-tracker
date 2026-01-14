@@ -13,4 +13,4 @@ RUN gem install bundler && bundle install
 
 COPY . .
 
-CMD ["bin/rails", "server", "-b", "0.0.0.0"]
+CMD ["bash", "-c", "rm -f tmp/pids/server.pid && bin/rails server -b 0.0.0.0"]

@@ -1,0 +1,8 @@
+<div class="container">
+  <h1>Applications</h1>
+  <ul>
+    <% @applications.each do |application| %>
+      <li><%= application.company_name %></li>
+    <% end %>
+  </ul>
+</div>

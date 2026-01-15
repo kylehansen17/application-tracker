@@ -2,7 +2,12 @@
   <h1>Applications</h1>
   <ul>
     <% @applications.each do |application| %>
-      <li><%= application.company_name %></li>
+      <li>
+        <strong><%= application.company_name %></strong>
+        <span><%= application.job_title %></span>
+        <span><%= application.applied_at %></span>
+        <span><%= application.status %></span>
+      </li>
     <% end %>
   </ul>
 </div>
